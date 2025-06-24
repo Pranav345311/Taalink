@@ -1,4 +1,3 @@
-
 import React from "react";
 
 function Card({ title, description }) {
@@ -16,11 +15,24 @@ export default function App() {
       <section className="text-center py-12">
         <h1 className="text-5xl font-bold text-orange-600">TaalLink</h1>
         <p className="mt-4 text-xl max-w-2xl mx-auto">
-          Bridging cultures through rhythm. Empowering youth with the art of tabla.
+          Free Tabla Workshop: Pass On the Rhythm. Empowering youth through Indian percussion.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-xl">Join Us</button>
-          <button className="border border-orange-500 px-4 py-2 rounded-xl text-orange-600">Donate</button>
+          <a
+            href="#volunteer"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-xl"
+          >
+            Join Us
+          </a>
+          <a
+            href="https://rzp.io/l/sampleDonate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="border border-orange-500 px-4 py-2 rounded-xl text-orange-600">
+              Donate
+            </button>
+          </a>
         </div>
       </section>
 
@@ -39,21 +51,37 @@ export default function App() {
         />
       </section>
 
-      <section className="text-center py-12">
+      <section className="text-center py-12" id="volunteer">
         <h2 className="text-3xl font-bold text-orange-600">Volunteer or Partner with Us</h2>
         <p className="mt-2 max-w-xl mx-auto">
-          Want to teach, help with logistics, or bring our program to your school or community? Fill out the form below.
+          Want to teach, help with logistics, or bring our program to your school or community?
+          Fill out the form below.
         </p>
-        <form className="mt-6 max-w-md mx-auto space-y-4">
-          <input className="w-full p-2 border rounded-xl" type="text" placeholder="Your Name" />
-          <input className="w-full p-2 border rounded-xl" type="email" placeholder="Your Email" />
-          <input className="w-full p-2 border rounded-xl" type="text" placeholder="How would you like to help?" />
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 w-full rounded-xl">Submit</button>
-        </form>
+        <div className="mt-6 max-w-2xl mx-auto">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe5L5s-Dq3uhKsoUjldyiRWnUVBtjcO2fKqOCZxMQymg_sG9w/viewform?embedded=true"
+            width="100%"
+            height="640"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Volunteer Form"
+          >
+            Loading…
+          </iframe>
+        </div>
       </section>
 
       <footer className="text-center text-sm text-gray-600 py-6 border-t border-orange-200">
-        © 2025 TaalLink. Empowering youth through rhythm.
+        © 2025 TaalLink. Empowering youth through rhythm. <br />
+        <a
+          href="https://wa.me/918123456789"
+          className="text-orange-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
       </footer>
     </main>
   );
